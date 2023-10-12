@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+<!--    style tag within the head allows us to style the table-->
+<!--    see the example below-->
+
+    <style>
+    table, th, tr, td {
+        border: blue 1px solid;
+    }
+
+    table, th, tr, td{
+            border-collapse: collapse;
+        }
+    thead,tfoot{
+        background-color: gray;
+    }
+
+    /*css selectors*/
+/*styling a class you must start with a dot*/
+/*    the class attribute can be put to almost every other element*/
+/*    you can also do an element.class styling like tr.one*/
+
+    .one{
+        background-color: aqua;
+
+    }
+tr:hover{
+    background-color: yellow;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+<!--to create a table you need a table element. <table></table>-->
+<!--you can also have links that will open different pages -->
+<!--done using a tags/elements-->
+
+<a href="home.html">Home</a>
+<a href="forms.html">Forms</a>
+<a href="forms2.html">Forms2</a>
+<a href="iframes.html">iframes</a>
+<a href="tables.html">tables</a>
+
+<table>
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Class</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Microsoft</td>
+    </tr>
+    <tr class="one">
+        <td>2</td>
+        <td>Mary</td>
+        <td>Oracle</td>
+    </tr>
+        <tr>
+        <td>3</td>
+        <td>Jane</td>
+        <td>IBM</td>
+    </tr>
+
+        <tr class="one">
+        <td>3</td>
+        <td>Jane</td>
+        <td>IBM</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Class</th>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>
